@@ -1,0 +1,14 @@
+{
+  "name": "wargaming-pow-generator",
+  "private": true,
+  "main": "./src/Server.js",
+  "scripts": {
+    "start": "node ./src/Server.js",
+    "build": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sha3": "^2.1.3"
+  }
+}
