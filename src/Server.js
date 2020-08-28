@@ -7,9 +7,9 @@ const port = 3000;
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 server.get('/', function(request, response) {
-  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.writeHead(200, { 'Content-Type': 'text/html' });
   response.end(`Use POST request.`);
-})
+});
 
 server.post('/', urlencodedParser, function(request, response) {
   const data = request.body['Schema'];
@@ -17,7 +17,7 @@ server.post('/', urlencodedParser, function(request, response) {
   const pow = powGenerator.generateBy(data);
   console.log(pow);
 
-  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.writeHead(200, { 'Content-Type': 'text/html' });
   response.end(pow);
 });
 
