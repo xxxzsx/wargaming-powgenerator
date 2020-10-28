@@ -6,4 +6,4 @@
 
 - request should be this format with your variables instead of underlined ones:
 
-  Schema=1:3:**<u>1600263575</u>**:wgni::<u>**RzLWt3DlIDSx2nLj**</u>:
+  Schema=1:3:**<ins>1600263575</ins>**:wgni::<ins>**RzLWt3DlIDSx2nLj**</ins>:
