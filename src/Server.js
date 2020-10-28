@@ -14,11 +14,17 @@ server.get('/', function(request, response) {
 
 server.post('/', urlencodedParser, function(request, response) {
     response.writeHead(200, { 'Content-Type': 'text/html' })
-    const requestData = request.body.Schema
-    console.log('Request: ', requestData)
-    const pow = powGenerator.generateBy(requestData)
-    console.log(pow)
-    response.end('' + pow)
+
+    if (!request.body || !request.body.Schema) {
+        console.log('Use x-www-form-urlencoded.')
+        response.end('Use x-www-form-urlencoded.')
+    } else {
+        const requestData = request.body.Schema
+        console.log('Request: ', requestData)
+        const pow = powGenerator.generateBy(requestData)
+        console.log(pow)
+        response.end('' + pow)
+    }
 })
 
 server.listen(port, () => {
