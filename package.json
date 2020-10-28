@@ -2,10 +2,9 @@
   "name": "wargaming-pow-generator",
   "private": true,
   "main": "./src/Server.js",
-  "bin": "./src/Server.js",
   "scripts": {
     "start": "node ./src/Server.js",
-    "build": "pkg . -t node10-win-x86,node10-linux,node10-macos"
+    "build": "pkg %npm_package_main% -o %npm_package_name%.exe -t node10-win-x86 --public"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
