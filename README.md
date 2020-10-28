@@ -7,3 +7,6 @@
 - request should be this format with your variables instead of underlined ones:
 
   Schema=1:3:**<ins>1600263575</ins>**:wgni::<ins>**RzLWt3DlIDSx2nLj**</ins>:
+
+### See also
+- https://github.com/mohamm4dx/SilverBullet: Advanced Selenium-based automation tool for scraping and parsing data, automated pentesting and much more.
