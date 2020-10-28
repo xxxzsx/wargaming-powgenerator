@@ -1,3 +1,3 @@
 @echo off
-IF NOT EXIST node_modules npm install
-npm run build
+IF NOT EXIST node_modules call npm install
+call npm run build
