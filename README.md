@@ -1,4 +1,4 @@
-# Wargaming POW generator
+# Wargaming PoW generator
 ### Usage
 - download and run exe from [releases](https://github.com/xxxzsx/wargaming-pow-generator/releases) or alternatively download project and run `START.bat`
 
